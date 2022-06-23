@@ -2,6 +2,7 @@ alphabet = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 y = 'y'
 while y == 'y':
   text = input("enter text for encryption ", )
+  text.upper
   offset = int(input("enter offset(key) ", ))
   endtext = ''
   action = input("Do you want to encrypt or decrypt?(en/de) ", )
