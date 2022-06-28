@@ -5,13 +5,13 @@ while y == 'y':
   text.upper
   offset = int(input("enter offset(key) ", ))
   endtext = ''
-  action = input("Do you want to encrypt or decrypt?(en/de) ", )
-  if action == 'en':
+  action = input("Do you want to encrypt or decrypt?(e/d) ", )
+  if action == 'e':
     for i in text:
       placeintext = alphabet.find(i)
       endplace = placeintext + offset
       endtext += alphabet[endplace % 27]
-  elif action == 'de':
+  elif action == 'd':
     for i in text:
       placeintext = alphabet.find(i)
       endplace = placeintext - offset
