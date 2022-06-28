@@ -17,6 +17,6 @@ while y == 'y':
       endplace = placeintext - offset
       endtext += alphabet[endplace % 27]
   else:
-    print("enter en or de")
+    print("enter e or d")
   print(endtext)
   y = input("Do you want to start new operation?(y/n) ")
