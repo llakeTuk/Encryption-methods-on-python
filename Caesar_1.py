@@ -20,3 +20,4 @@ while y == 'y':
     print("enter e or d")
   print(endtext)
   y = input("Do you want to start new operation?(y/n) ")
+print('goodbye')
