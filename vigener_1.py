@@ -1,3 +1,5 @@
+buffer = ''
+key = ''
 
 def encryption(buffer, key):
   key_length = len(key)
@@ -21,8 +23,6 @@ def decryption(buffer, key):
     buffer += chr(value + 65)
   return buffer
 
-buffer = ''
-key = ''
 y = 'y'
 print("Please, use only upper index")
 buffer = input("enter text for crypting: ", )
