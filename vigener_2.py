@@ -1,3 +1,6 @@
+alphabet = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+buffer = ''
+key = ''
 
 def encryption(buffer, key, alphabet):
   key_length = len(key)
@@ -21,9 +24,6 @@ def decryption(buffer, key, alphabet):
     buffer += alphabet[(place_in_alphabet - place_in_alphabet_key) % 27]
   return buffer
 
-alphabet = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-buffer = ''
-key = ''
 y = 'y'
 print("Please, use only upper index")
 buffer = input("enter text for crypting: ", )
