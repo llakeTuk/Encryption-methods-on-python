@@ -1,5 +1,6 @@
 alphabet = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 y = 'y'
+
 while y == 'y':
   text = input("enter text for encryption ", )
   text.upper
