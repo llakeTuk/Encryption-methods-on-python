@@ -3,17 +3,17 @@ buffer = ''
 key = ''
 
 def encryption(buffer, key, alphabet):
-  plain = buffer
+  plain_text = buffer
   buffer = ''
-  for i in range(len(plain)):
-    buffer += alphabet[(alphabet.find(plain[i]) + alphabet.find(key[i % len(key)])) % 27]
+  for i in range(len(plain_text)):
+    buffer += alphabet[(alphabet.find(plain_text[i]) + alphabet.find(key[i % len(key)])) % 27]
   return buffer
   
 def decryption(buffer, key, alphabet):
-  cypher = buffer
+  cypher_text = buffer
   buffer = ''
-  for i in range(len(cypher)):
-    buffer += alphabet[(alphabet.find(cypher[i]) - alphabet.find(key[i % len(key)])) % 27]
+  for i in range(len(cypher_text)):
+    buffer += alphabet[(alphabet.find(cypher_text[i]) - alphabet.find(key[i % len(key)])) % 27]
   return buffer
   
 y = 'y'
